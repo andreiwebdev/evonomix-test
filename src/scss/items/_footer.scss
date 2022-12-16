@@ -1,0 +1,32 @@
+footer {
+  font-size: 12px;
+  a {
+    color: $c--black;
+    font-weight: 300;
+    &:hover {
+      text-decoration: none;
+      color: $c--black;
+    }
+  }
+  .icon-heart {
+    font-size: 24px;
+    margin: 0px 4px;
+  }
+  .footer_links {
+    font-family: $ff--primary--light;
+    a {
+      margin-right: 10px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $bp--lg) {
+  .footer_links {
+    a {
+      margin-right: 0px;
+    }
+  }
+}

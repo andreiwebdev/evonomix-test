@@ -1,0 +1,20 @@
+$primary: #ed1c24;
+$secondary: #000000;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "./0-variables.scss";
+@import "./0-typo.scss";
+@import "./1-elements.scss";
+@import "./2-items.scss";
+
+body {
+  font-family: $ff--primary--regular;
+  color: $c--black;
+}
+
+@media (min-width: $bp--xl) {
+  .container {
+    max-width: 1170px;
+  }
+}

@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Oferta saptamanii",
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, n",
+    "buttonText": "Detalii",
+    "buttonLink": "/link",
+    "background": {
+      "backgroundImage": "../../src/img/slider-img.jpg"
+    }
+  },
+  {
+    "title": "Oferta saptamanii",
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, n",
+    "buttonLink": "/link",
+    "background": {
+      "backgroundImage": "../../src/img/slider-img-2.jpg"
+    }
+  },
+  {
+    "title": "Oferta saptamanii",
+    "buttonText": "Detalii",
+    "buttonLink": "/link",
+    "background": {
+      "backgroundColor": "#444444"
+    }
+  },
+  {
+    "description": "Cum sociis natoque penatibus et magnis dis parturient montes, n",
+    "buttonText": "Detalii",
+    "buttonLink": "/link",
+    "background": {
+      "backgroundColor": "#111111"
+    }
+  }
+]

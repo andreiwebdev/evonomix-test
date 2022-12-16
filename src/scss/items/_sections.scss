@@ -1,0 +1,156 @@
+section {
+  z-index: 2;
+  height: 100%;
+  min-height: 100vh;
+  svg {
+    width: 42px;
+    fill: $c--white;
+  }
+  .container {
+    height: 100%;
+    min-height: inherit;
+  }
+}
+
+.heading {
+  h1 {
+    text-transform: uppercase;
+  }
+}
+
+#ctaSection {
+  position: relative;
+  .shape--bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -32px;
+    margin: 0 auto;
+    transform: rotate(180deg);
+    width: 100%;
+  }
+  .btn-secondary {
+    position: absolute;
+    bottom: 0px;
+    z-index: 2;
+  }
+  p {
+    color: $c--shade;
+  }
+}
+
+#offerSection {
+  .icon-sun {
+    font-size: 42px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+
+  .rotate {
+    animation: rotation 8s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+#videoSection {
+  background-image: url(../../src/img/video-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  .overlay {
+    background: rgba(0, 0, 0, 0.787);
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+  .icon-play-circled2 {
+    font-size: 113px;
+  }
+  iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#articlesSection {
+  .icon-paper-plane {
+    font-size: 36px;
+  }
+  h2 {
+    margin-bottom: 60px;
+  }
+  .articles {
+    p {
+      line-height: 19.5px;
+      font-size: 16px;
+    }
+    a {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    img {
+      border-radius: 100%;
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+#formSection {
+  background-image: url(../../src/img/form-bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  .icon-mail {
+    font-size: 48px;
+  }
+  p {
+    font-family: $ff--primary--medium;
+    margin-bottom: 40px;
+  }
+  form {
+    margin-bottom: 40px;
+  }
+  .btn-primary {
+    max-width: 280px;
+  }
+}
+
+@media screen and (min-width: $bp--sm) {
+  #articlesSection {
+    img {
+      margin-bottom: 0px;
+    }
+  }
+  #ctaSection {
+    .shape--bottom {
+      bottom: -50px;
+    }
+  }
+}
+
+@media screen and (min-width: $bp--md) {
+  #ctaSection {
+    .shape--bottom {
+      width: auto;
+    }
+  }
+}

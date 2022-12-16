@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "RalewayLight";
+  src: url("../fonts/Raleway-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../fonts/Raleway-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayMedium";
+  src: url("../fonts/Raleway-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/HelveticaNeue.ttf") format("truetype");
+}
+
+h1 {
+  font-family: $ff--primary--medium;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+h4 {
+  font-family: $ff--primary--medium;
+}
+
+p {
+  font-size: 14px;
+  font-family: $ff--primary--light;
+}
+
+.ff--primary {
+  font-family: "RalewayMedium";
+}
+.ff--secondary {
+  font-family: "Helvetica";
+}
+
+@media screen and (min-width: $bp--md) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 30px;
+    margin-bottom: 12px;
+  }
+  p {
+    font-size: 18px;
+  }
+}

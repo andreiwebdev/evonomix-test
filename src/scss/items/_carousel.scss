@@ -1,0 +1,107 @@
+.carousel {
+  img.header-shape {
+    display: inherit;
+    width: 100%;
+    position: absolute;
+    left: 20%;
+    top: -30px;
+  }
+  .header_social {
+    position: absolute;
+    top: 18px;
+    z-index: 2;
+    .social_item {
+      width: 27px;
+      height: 27px;
+      background: $c--gray;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-right: 10px;
+      color: $c--white;
+      border-radius: 100%;
+      font-size: 14px;
+      transition: background 0.3s;
+      &:hover {
+        background: $c--primary;
+      }
+    }
+  }
+  .owl-carousel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $c--white;
+    .item {
+      // background-image: url("../../src/img/slider-img.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: calc(100vh - 56px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      background: #1f1f1fc6;
+      width: fit-content;
+      padding: 14px 20px;
+      margin-bottom: 16px;
+    }
+    p {
+      font-family: $ff--primary--medium;
+      background: #333532da;
+      width: fit-content;
+      padding: 14px 20px;
+      margin-bottom: 16px;
+    }
+    .btn--1 {
+      margin-bottom: 30px;
+    }
+    .owl-nav {
+      position: absolute;
+      bottom: 0px;
+      right: 11%;
+      font-size: 140px;
+      font-weight: 700;
+      button {
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $bp--sm) {
+  .carousel {
+    img.header-shape {
+      position: absolute;
+      left: 30%;
+      top: -100px;
+    }
+  }
+}
+
+@media screen and (min-width: $bp--md) {
+  .carousel {
+    img.header-shape {
+      display: inherit;
+      width: auto;
+      position: absolute;
+      left: 60%;
+      top: -70px;
+    }
+  }
+}
+
+@media screen and (min-width: $bp--lg) {
+  .carousel {
+    .owl-carousel {
+      .item {
+        height: calc(100vh - 130px);
+      }
+    }
+  }
+}
