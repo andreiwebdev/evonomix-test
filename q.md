@@ -1,1 +1,0 @@
-1. Toate zonele late cat PSD-ul sunt fullscreen (indiferent de rezolutie, trebuie sa fie late cat ecranul device-ului) - inaltime sau latime ?
